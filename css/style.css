@@ -1,0 +1,137 @@
+/***********************************/
+/* GENERAL */
+/***********************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px = 1rem */
+  font-size: 62.5%;
+}
+
+body {
+  color: hsl(0, 0%, 100%);
+}
+
+/***********************************/
+/* LOGO */
+/***********************************/
+
+.logo {
+  position: absolute;
+  top: 4rem;
+  left: 14rem;
+}
+
+/***********************************/
+/* SECTION */
+/***********************************/
+
+.section {
+  position: relative;
+  background: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 8rem;
+  margin: 15rem;
+  margin-bottom: 7rem;
+}
+
+.illustration {
+  width: 60rem;
+}
+
+.section-text {
+  margin-top: 4rem;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.description {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: hsl(257, 40%, 49%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem 6rem;
+  margin-top: 2rem;
+  border-radius: 500rem;
+  box-shadow: 1rem 1rem 1rem hsl(0, 0%, 0%, 0.1);
+}
+
+.btn:hover,
+.btn:visited {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+}
+
+/***********************************/
+/* FOOTER */
+/***********************************/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10rem 0 20rem;
+}
+
+.attribution {
+  font-size: 11px;
+  color: hsl(0, 0%, 100%);
+  padding-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 0%);
+}
+
+.btn-icon {
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0);
+}
+
+.btn-icon:hover,
+.btn-icon:visited,
+.icon:hover,
+.icon:visited {
+  cursor: pointer;
+  stroke: hsl(300, 69%, 71%);
+  fill: hsl(300, 69%, 71%);
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  fill: white;
+}
