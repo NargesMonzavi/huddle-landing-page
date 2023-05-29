@@ -45,7 +45,6 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   gap: 8rem;
   margin: 15rem;
   margin-bottom: 7rem;
@@ -134,4 +133,75 @@ body {
   width: 4rem;
   height: 4rem;
   fill: white;
+}
+
+/***********************************/
+/* QUERIES */
+/***********************************/
+
+/***********************************/
+/* BELOW 750px (Tablets) */
+/***********************************/
+
+/* 750px / 16px = 47rem = 47em */
+
+@media (max-width: 47em) {
+  body {
+    display: flex;
+  }
+
+  .logo {
+    top: 7rem;
+    left: 7.5rem;
+  }
+
+  .section {
+    position: relative;
+    background: top / 100% no-repeat url(../images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 7.5rem;
+    margin-top: 25rem;
+    margin-bottom: 10rem;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 5rem;
+    line-height: 1.5;
+  }
+
+  .description {
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: block;
+    margin: 5rem auto;
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding: 2.7rem 15rem;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    gap: 5rem;
+  }
+
+  .icons {
+    gap: 2rem;
+  }
 }
